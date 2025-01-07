@@ -6,4 +6,6 @@
 
 # npm run build
 
+# Install Azure Static Web Apps CLI
+
 # swa start build --api-location api
