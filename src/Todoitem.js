@@ -1,12 +1,15 @@
 import React from "react"
-function Todoitem(props) {
+
+function TodoItem(props) {
   return (
-    <li>
-      <input type="checkbox" checked={props.completed} />
-      {props.id}
-      {props.text}
-    </li>
+    <tr>
+      <td>{props.id}</td>
+      <td>{props.text}</td>
+      <td>
+        <input type="checkbox" checked={props.completed} onChange={() => props.onToggle(props.id)} />
+      </td>
+    </tr>
   )
 }
 
-export default Todoitem
+export default TodoItem
